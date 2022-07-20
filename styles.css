@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 0 auto;
+ 
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #92828d;
+    color: white;
+    padding: 2rem;
+    
+}
+
+nav button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.5em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+nav button:hover {
+    color: #ffffff;
+    background-color: #ceb5a7;
+}
+
+nav li {
+    display: inline;
+    width: 100%;
+    height: 2rem;
+    margin: 0 auto;
+    padding: 1.75rem;
+    
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #ebefbf;
+}
+
+#banner {
+    height: 500px;
+    display: flex;
+    background-image: url(./images/salon-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#banner img {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+
+}
+
+#button-container {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+ 
+}
+
+#booking-button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    height: 2rem;
+}
+
+input {
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 767px) {
+    #booking-button {
+        display: none;
+    }
+}
+
+#welcome {
+    position: relative;
+    text-align: center;
+    margin: auto 5rem;
+    width: 300px;
+    height: 200px;
+    background-color: #92828d;
+    border: 2px solid #ceb5a7;
+    padding: 1.2rem;
+}
+
+#welcome h1 {
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.container {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-items: center;
+    background-color: #92828d;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+#contact {
+    background-color: #ceb5a7;
+    padding: 2rem 0 2rem 0; 
+    text-align: center;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    border-radius: 2rem;
+    margin: 1rem;
+    width: 20%;
+    align-self: center;
+}
+
+#contact img {
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 2rem;
+}
+
+#about-me {
+    background-color: #ceb5a7;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 60%;
+    margin: 1rem;
+}
+
+
+#opening {
+    background-color: #ceb5a7;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    border-radius: 2rem;
+    margin: 1rem;
+    width: 20%;
+}
+
+
+h2 {
+    line-height: 2rem;
+}
+
+#opening li {
+    list-style: none;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 2rem;
+    height: 100%;
+
+}
+
+#box1 {
+    height: 27.5rem;
+    width: 27.5rem;
+    background-color: #92828d;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-image: url(./images/hair1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+}
+
+#box2 {
+    height: 27.5rem;
+    width: 27.5rem;
+    background-color: #ceb5a7;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-image: url(./images/hair2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#box3 {
+    height: 27.5rem;
+    width: 27.5rem;
+    background-color: #92828d;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-image: url(./images/hair3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ceb5a7;
+    overflow: visible;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    width: 40%;
+}
+
+#hair {
+    text-align: justify;
+}
+
+#nothair {
+    text-align: justify;
+}
+
+#prices li {
+    list-style: none;
+}
+
+.social {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: #ceb5a7;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.social img {
+    height: 50px;
+}
+
+footer img {
+    height: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    color: #92828d;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #92828d;
+    height: 15rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0.5rem;
+}
+
+.social {
+    grid-template-columns: 1 / 4;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.social li {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+
+    nav li {
+        padding: 1rem;
+    }
+
+    button {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-items: normal;
+        align-items: center;
+        padding: 0;
+    }
+
+    #box1 {
+        box-shadow: none;
+    }
+
+    #box2 {
+        box-shadow: none;
+    }
+
+    #box3 {
+        box-shadow: none;
+    }
+
+    #opening {
+        font-size: 0.75rem;
+        width: 100%;
+    }
+
+    #about-me {
+        display: none;
+    }
+
+    #opening {
+        grid-column: 1 / 4;
+        border-radius: 0;
+    }
+
+    #prices {
+        border-radius: 0;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        height: 60%;  
+    }
+
+    .social {
+        display: none;
+    }
+
+    #contact {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #contact img {
+        display: none;
+    }
+
+    #contact p {
+        font-size: 2rem;
+    }
+}
